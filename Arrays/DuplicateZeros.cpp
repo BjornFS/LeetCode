@@ -7,7 +7,7 @@ void duplicateZeros(vector<int>& arr) {
     int possible_dups = 0;
     int last = n - 1;
 
-    // 1. Find the number of zeros to be duplicated
+    // Find the number of zeros to be duplicated
     for (int i = 0; i <= last - possible_dups; i++) {
         if (arr[i] == 0) {
             // Edge case: if the zero is at the boundary and can't be duplicated
@@ -20,8 +20,8 @@ void duplicateZeros(vector<int>& arr) {
         }
     }
 
-    // 2. Backward pass to fill the vector
-    int j = last; // The logical end of the "expanded" array that fits
+    // Backward pass to fill the vector
+    int j = last;            // The logical end of the "expanded" array that fits
     for (int i = j - possible_dups; i >= 0; i--) {
         if (arr[i] == 0) {
             arr[i + possible_dups] = 0;

@@ -1,5 +1,5 @@
 #include <vector>
-#include <algorithm> // for std::sort
+#include <algorithm> // for sort
 
 using namespace std;
 

@@ -16,7 +16,7 @@ int findMaxConsecutiveOnes(const vector<int>& nums) {
             }
         }
 
-        max_count = max(max_count, counter);
+        max_count = max(max_count, counter); // in case the array ends with 1s
 
         return max_count;
 };
